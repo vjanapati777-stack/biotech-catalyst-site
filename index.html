@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Runway — Biotech Catalyst Screener</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;700&display=swap');
+
+  :root{
+    --ink:#0A1612;
+    --paper:#F2F5F1;
+    --panel:#FFFFFF;
+    --teal:#1F9E89;
+    --teal-bright:#2DD4BF;
+    --amber:#C2410C;
+    --muted:#5C6B62;
+    --line:#D7DED7;
+  }
+  *{box-sizing:border-box;}
+  body{
+    margin:0; background:var(--paper); color:var(--ink);
+    font-family:'Inter',sans-serif; -webkit-font-smoothing:antialiased;
+  }
+  header{
+    max-width:980px; margin:0 auto; padding:48px 24px 24px;
+  }
+  .eyebrow{
+    font-family:'JetBrains Mono',monospace; font-size:12px; letter-spacing:.12em;
+    text-transform:uppercase; color:var(--teal);
+  }
+  h1{
+    font-family:'Space Grotesk',sans-serif; font-weight:700;
+    font-size:clamp(36px,5.5vw,56px); margin:6px 0 10px; line-height:1.02;
+  }
+  .sub{color:var(--muted); max-width:600px; font-size:15.5px; line-height:1.55;}
+
+  .tabs{display:flex; gap:2px; max-width:980px; margin:28px auto 0; padding:0 24px;}
+  .tab{
+    font-family:'Space Grotesk',sans-serif; font-weight:600; font-size:14px;
+    padding:12px 22px; background:transparent; border:2px solid var(--ink);
+    border-bottom:none; cursor:pointer; color:var(--ink);
+  }
+  .tab.active{background:var(--ink); color:var(--paper);}
+
+  main{max-width:980px; margin:0 auto; padding:0 24px 100px; border-top:2px solid var(--ink);}
+  .panel{padding-top:28px; display:none;}
+  .panel.active{display:block;}
+
+  .controls{
+    display:flex; gap:12px; flex-wrap:wrap; align-items:flex-end;
+    background:var(--panel); border:1px solid var(--line); padding:20px; margin-bottom:24px;
+  }
+  .field{display:flex; flex-direction:column; gap:6px;}
+  .field label{font-family:'JetBrains Mono',monospace; font-size:11px; color:var(--muted); text-transform:uppercase; letter-spacing:.06em;}
+  .field input, .field select{
+    font-family:'JetBrains Mono',monospace; font-size:14px; padding:9px 10px;
+    border:2px solid var(--ink); background:#fff; color:var(--ink); min-width:120px;
+  }
+  .field.checkbox{flex-direction:row; align-items:center; gap:8px;}
+  button.run{
+    font-family:'Space Grotesk',sans-serif; font-weight:600; font-size:14px;
+    background:var(--teal); color:#fff; border:none; padding:11px 24px;
+    cursor:pointer; margin-left:auto;
+  }
+  button.run:hover{background:#178072;}
+  button.run:disabled{opacity:.5; cursor:not-allowed;}
+
+  .meta-row{
+    font-family:'JetBrains Mono',monospace; font-size:12px; color:var(--muted);
+    margin-bottom:14px; display:flex; justify-content:space-between;
+  }
+
+  .card{
+    background:var(--panel); border:1px solid var(--line); border-left:4px solid var(--teal);
+    padding:18px 20px; margin-bottom:14px;
+  }
+  .card-top{display:flex; justify-content:space-between; align-items:baseline; gap:12px; flex-wrap:wrap;}
+  .card-top .name{font-family:'Space Grotesk',sans-serif; font-weight:700; font-size:18px;}
+  .card-top .ticker{font-family:'JetBrains Mono',monospace; color:var(--teal); font-weight:700;}
+  .card-top .price{font-family:'JetBrains Mono',monospace; font-size:15px; color:var(--muted);}
+
+  .gauge-wrap{margin:12px 0 10px;}
+  .gauge-label{font-family:'JetBrains Mono',monospace; font-size:11px; color:var(--muted); display:flex; justify-content:space-between; margin-bottom:4px;}
+  .gauge{height:8px; background:#E6EAE5; position:relative;}
+  .gauge-fill{height:100%; background:var(--teal);}
+  .gauge-fill.low{background:var(--amber);}
+
+  .cat-list{margin-top:10px; padding-top:10px; border-top:1px dashed var(--line);}
+  .cat-item{
+    font-size:13.5px; display:flex; gap:8px; align-items:baseline; margin-bottom:6px;
+  }
+  .phase-badge{
+    font-family:'JetBrains Mono',monospace; font-size:10px; background:var(--ink); color:var(--teal-bright);
+    padding:2px 6px; flex-shrink:0;
+  }
+  .no-catalyst{font-size:13px; color:var(--muted); font-style:italic;}
+
+  .status{font-family:'JetBrains Mono',monospace; font-size:13px; color:var(--teal); margin:14px 0; display:none;}
+  .status.show{display:block;}
+  .err{border:2px solid var(--amber); color:var(--amber); padding:14px; font-size:14px; margin:14px 0; display:none;}
+  .err.show{display:block;}
+
+  /* Lookup panel */
+  .lookup-bar{display:flex; gap:10px; margin-bottom:24px;}
+  .lookup-bar input{flex:1; font-family:'JetBrains Mono',monospace; font-size:16px; padding:13px 14px; border:2px solid var(--ink);}
+  .lookup-result{background:var(--panel); border:1px solid var(--line); padding:24px; display:none;}
+  .lookup-result.show{display:block;}
+  .lookup-result h2{font-family:'Space Grotesk',sans-serif; margin:0 0 4px;}
+  .lookup-result .price-line{font-family:'JetBrains Mono',monospace; color:var(--muted); margin-bottom:16px;}
+  .lookup-result h3{font-family:'JetBrains Mono',monospace; font-size:11px; text-transform:uppercase; letter-spacing:.08em; color:var(--teal); border-bottom:2px solid var(--teal); padding-bottom:5px; margin:22px 0 10px;}
+  .lookup-result p{font-size:15px; line-height:1.6;}
+  .cat-row{border-bottom:1px solid var(--line); padding:10px 0; font-size:14px;}
+  .cat-row b{display:block; font-family:'Space Grotesk',sans-serif;}
+  .src-list{font-size:13px; color:var(--muted);}
+  .src-list a{color:var(--teal);}
+
+  footer{max-width:980px; margin:0 auto; padding:0 24px 60px; font-size:12px; color:var(--muted); line-height:1.6; border-top:1px solid var(--line); padding-top:20px;}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="eyebrow">Runway — Biotech Catalyst Screener</div>
+  <h1>Cash runway meets<br>clinical calendar.</h1>
+  <p class="sub">Pre-screened against SEC filings and ClinicalTrials.gov, refreshed daily. Screen the whole biotech universe, or look up any single stock for a live, grounded briefing.</p>
+</header>
+
+<div class="tabs">
+  <button class="tab active" data-tab="screen">Screen the universe</button>
+  <button class="tab" data-tab="lookup">Look up one stock</button>
+</div>
+
+<main>
+  <section class="panel active" id="panel-screen">
+    <div class="controls">
+      <div class="field">
+        <label>Max price ($)</label>
+        <input type="number" id="maxPrice" value="10" min="0" step="0.5">
+      </div>
+      <div class="field">
+        <label>Min cash position ($M)</label>
+        <input type="number" id="minCash" value="0" min="0" step="5">
+      </div>
+      <div class="field">
+        <label>Sort by</label>
+        <select id="sortBy">
+          <option value="cash">Cash position</option>
+          <option value="runway">Runway (months)</option>
+          <option value="catalysts">Catalyst count</option>
+        </select>
+      </div>
+      <div class="field checkbox">
+        <input type="checkbox" id="catalystOnly" checked>
+        <label style="text-transform:none; letter-spacing:0;">Only show catalyst in next 1–4 months</label>
+      </div>
+      <button class="run" id="runScreen">Run screen</button>
+    </div>
+
+    <div class="status" id="screenStatus">Querying the latest data...</div>
+    <div class="err" id="screenErr"></div>
+    <div class="meta-row" id="screenMeta" style="display:none;"></div>
+    <div id="screenResults"></div>
+  </section>
+
+  <section class="panel" id="panel-lookup">
+    <div class="lookup-bar">
+      <input type="text" id="lookupInput" placeholder="Ticker or company name, e.g. NUVB or Nuvation Bio">
+      <button class="run" id="runLookup" style="margin-left:0;">Look up</button>
+    </div>
+    <div class="status" id="lookupStatus">Pulling SEC + trial data, then researching catalysts...</div>
+    <div class="err" id="lookupErr"></div>
+    <div class="lookup-result" id="lookupResult"></div>
+  </section>
+</main>
+
+<footer>
+  <strong>Not financial advice.</strong> Cash and runway figures come from SEC XBRL filings and may lag the most recent quarter by several weeks; catalyst dates come from ClinicalTrials.gov and web research and can shift or be delayed. Biotech stocks carry high binary risk — verify every figure against the company's own 10-Q/10-K and press releases before acting, and consult a licensed financial advisor.
+</footer>
+
+<script>
+const tabs = document.querySelectorAll('.tab');
+tabs.forEach(t => t.addEventListener('click', () => {
+  tabs.forEach(x => x.classList.remove('active'));
+  t.classList.add('active');
+  document.querySelectorAll('.panel').forEach(p => p.classList.remove('active'));
+  document.getElementById('panel-' + t.dataset.tab).classList.add('active');
+}));
+
+function fmtMoney(n){
+  if(n == null) return '—';
+  if(Math.abs(n) >= 1e9) return '$' + (n/1e9).toFixed(2) + 'B';
+  if(Math.abs(n) >= 1e6) return '$' + (n/1e6).toFixed(1) + 'M';
+  return '$' + n.toLocaleString();
+}
+function escapeHtml(s){
+  return (s||'').toString().replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+}
+
+// ---------- Screen ----------
+document.getElementById('runScreen').addEventListener('click', runScreen);
+
+async function runScreen(){
+  const maxPrice = document.getElementById('maxPrice').value;
+  const minCashM = parseFloat(document.getElementById('minCash').value || '0');
+  const catalystOnly = document.getElementById('catalystOnly').checked;
+  const sort = document.getElementById('sortBy').value;
+
+  const statusEl = document.getElementById('screenStatus');
+  const errEl = document.getElementById('screenErr');
+  const metaEl = document.getElementById('screenMeta');
+  const resultsEl = document.getElementById('screenResults');
+
+  statusEl.classList.add('show');
+  errEl.classList.remove('show');
+  metaEl.style.display = 'none';
+  resultsEl.innerHTML = '';
+
+  try{
+    const params = new URLSearchParams({
+      maxPrice: maxPrice || '',
+      minCash: String(minCashM * 1e6),
+      catalystOnly: String(catalystOnly),
+      sort,
+      limit: '100'
+    });
+    const res = await fetch('/api/screen?' + params.toString());
+    const data = await res.json();
+    if(!res.ok) throw new Error(data.error || 'Screen failed');
+
+    metaEl.style.display = 'flex';
+    metaEl.innerHTML = `<span>${data.totalMatching} matching companies</span><span>Data as of: ${data.generatedAt ? new Date(data.generatedAt).toLocaleString() : 'not yet refreshed'}</span>`;
+
+    if(data.results.length === 0){
+      resultsEl.innerHTML = '<p style="color:var(--muted)">No matches yet. If this is a brand-new deployment, the daily refresh job hasn\\'t run yet — trigger it manually from the GitHub Actions tab.</p>';
+    } else {
+      resultsEl.innerHTML = data.results.map(renderCard).join('');
+    }
+  }catch(e){
+    errEl.textContent = e.message;
+    errEl.classList.add('show');
+  }finally{
+    statusEl.classList.remove('show');
+  }
+}
+
+function renderCard(c){
+  const runway = c.estimatedRunwayMonths;
+  const runwayPct = runway ? Math.min(100, (runway / 36) * 100) : 0;
+  const low = runway != null && runway < 6;
+
+  const catalystsHtml = (c.nearTermCatalysts && c.nearTermCatalysts.length)
+    ? `<div class="cat-list">${c.nearTermCatalysts.map(t => `
+        <div class="cat-item"><span class="phase-badge">${escapeHtml(t.phase || '—')}</span>
+        <span>${escapeHtml(t.title)} — expected ${escapeHtml(t.primaryCompletionDate)}</span></div>
+      `).join('')}</div>`
+    : `<div class="cat-list"><span class="no-catalyst">No trial readout found in ClinicalTrials.gov for the next 4 months</span></div>`;
+
+  return `
+    <div class="card">
+      <div class="card-top">
+        <span class="name">${escapeHtml(c.name)} <span class="ticker">${escapeHtml(c.ticker)}</span></span>
+        <span class="price">${c.price != null ? '$' + c.price.toFixed(2) : '—'}</span>
+      </div>
+      <div class="gauge-wrap">
+        <div class="gauge-label"><span>Cash position: ${fmtMoney(c.totalCashPosition)}</span><span>${runway != null ? runway + ' mo runway' : 'runway unknown'}</span></div>
+        <div class="gauge"><div class="gauge-fill ${low ? 'low' : ''}" style="width:${runwayPct}%"></div></div>
+      </div>
+      ${catalystsHtml}
+    </div>
+  `;
+}
+
+// ---------- Lookup ----------
+document.getElementById('runLookup').addEventListener('click', runLookup);
+document.getElementById('lookupInput').addEventListener('keydown', e => { if(e.key === 'Enter') runLookup(); });
+
+async function runLookup(){
+  const q = document.getElementById('lookupInput').value.trim();
+  if(!q) return;
+
+  const statusEl = document.getElementById('lookupStatus');
+  const errEl = document.getElementById('lookupErr');
+  const resultEl = document.getElementById('lookupResult');
+
+  statusEl.classList.add('show');
+  errEl.classList.remove('show');
+  resultEl.classList.remove('show');
+  resultEl.innerHTML = '';
+
+  try{
+    const res = await fetch('/api/lookup', {
+      method: 'POST',
+      headers: {'Content-Type':'application/json'},
+      body: JSON.stringify({ query: q })
+    });
+    const data = await res.json();
+    if(!res.ok) throw new Error(data.error || 'Lookup failed');
+
+    const textBlocks = (data.content || []).filter(b => b.type === 'text').map(b => b.text);
+    let raw = textBlocks.join('\\n').trim().replace(/^```json/i,'').replace(/^```/,'').replace(/```$/,'').trim();
+    const firstBrace = raw.indexOf('{');
+    const lastBrace = raw.lastIndexOf('}');
+    const parsed = JSON.parse(raw.slice(firstBrace, lastBrace+1));
+
+    renderLookup(parsed);
+  }catch(e){
+    errEl.textContent = e.message;
+    errEl.classList.add('show');
+  }finally{
+    statusEl.classList.remove('show');
+  }
+}
+
+function renderLookup(d){
+  const catalysts = (d.near_term_catalysts || []).map(c => `
+    <div class="cat-row"><b>${escapeHtml(c.catalyst)}</b>${escapeHtml(c.expected_window)} — <span style="color:var(--muted)">${escapeHtml(c.source)}</span></div>
+  `).join('') || '<p style="color:var(--muted)">No specific near-term catalyst found.</p>';
+
+  const sources = (d.sources || []).map(s => `<a href="${escapeHtml(s.url)}" target="_blank" rel="noopener">${escapeHtml(s.name)}</a>`).join(' · ');
+
+  document.getElementById('lookupResult').innerHTML = `
+    <h2>${escapeHtml(d.company_name)} <span style="color:var(--teal); font-family:'JetBrains Mono',monospace;">${escapeHtml(d.ticker)}</span></h2>
+    <div class="price-line">${d.price != null ? '$' + d.price.toFixed(2) : 'price unavailable'} · ${escapeHtml(d.cash_position)} · ${d.estimated_runway_months != null ? d.estimated_runway_months + ' mo estimated runway' : 'runway unknown'}</div>
+    <p>${escapeHtml(d.summary)}</p>
+    <h3>Near-term catalysts (1–4 months)</h3>
+    ${catalysts}
+    <h3>Sources</h3>
+    <div class="src-list">${sources || 'not specified'}</div>
+  `;
+  document.getElementById('lookupResult').classList.add('show');
+}
+</script>
+
+</body>
+</html>
