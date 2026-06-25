@@ -29,38 +29,58 @@ async function getText(url) {
 // wider net.)
 const BIOTECH_SIC_CODES = ['8731', '2836'];
 
-// Parses the Atom feed SEC returns from browse-edgar. NOTE: if SEC tweaks
-// this feed's markup, this regex may need a small adjustment — open the
-// URL in a browser and compare against what this expects (CIK number +
-// company name per <entry>).
-function parseBrowseEdgarAtom(xml) {
-  const entries = [];
-  const entryBlocks = xml.split('<entry>').slice(1);
-  for (const block of entryBlocks) {
-    const cikMatch = block.match(/CIK=(\d{10})/) || block.match(/CIK(\d{10})/);
-    const titleMatch = block.match(/<title>(.*?)<\/title>/);
-    if (cikMatch && titleMatch) {
-      // title is usually "CIK#: 0001234567 - COMPANY NAME"
-      const name = titleMatch[1].replace(/^CIK#:\s*\d+\s*-\s*/, '').trim();
-      entries.push({ cik: cikMatch[1], name });
-    }
+// NOTE: we deliberately use efts.sec.gov (the full-text search JSON API)
+// here instead of the older www.sec.gov/cgi-bin/browse-edgar company
+// search. The legacy page sits behind Akamai bot protection that can
+// silently serve an unparseable response to data-center IPs (like GitHub
+// Actions runners) without ever returning an HTTP error — which is why an
+// earlier version of this file quietly found 0 companies. efts.sec.gov has
+// no such protection and returns plain JSON.
+function extractCikAndName(hit) {
+  const src = hit._source || {};
+  let cik = src.cik || (Array.isArray(src.ciks) && src.ciks[0]) || null;
+  let name = src.entity_name || (Array.isArray(src.display_names) && src.display_names[0]) || null;
+
+  // display_names is often like "ACME CORP (0001234567) (Filer)" — pull the
+  // CIK out of it if we didn't get one directly, and clean the name.
+  if (name) {
+    const m = name.match(/\((\d{10})\)/);
+    if (!cik && m) cik = m[1];
+    name = name.replace(/\s*\(.*?\)\s*/g, ' ').trim();
   }
-  return entries;
+  if (cik) cik = String(cik).replace(/^0+/, '') || '0';
+  return cik && name ? { cik, name } : null;
 }
 
 async function fetchUniverseForSic(sic) {
   const results = [];
-  let start = 0;
+  let from = 0;
   const pageSize = 100;
+  let loggedSample = false;
   while (true) {
-    const url = `https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&SIC=${sic}&type=10-K&dateb=&owner=include&count=${pageSize}&start=${start}&output=atom`;
-    const xml = await getText(url);
-    const page = parseBrowseEdgarAtom(xml);
-    if (page.length === 0) break;
-    results.push(...page);
-    start += pageSize;
+    const url = `https://efts.sec.gov/LATEST/search-index?q=&forms=10-K&sics=${sic}&from=${from}&size=${pageSize}`;
+    let data;
+    try {
+      data = await getJson(url);
+    } catch (e) {
+      console.log(`  SIC ${sic} page from=${from} failed: ${e.message}`);
+      break;
+    }
+    const hits = data?.hits?.hits || [];
+    if (!loggedSample && hits.length > 0) {
+      // One-time diagnostic so we can see the exact shape SEC is returning,
+      // in case extractCikAndName ever needs adjusting again.
+      console.log('Sample EFTS hit (for debugging):', JSON.stringify(hits[0]).slice(0, 500));
+      loggedSample = true;
+    }
+    if (hits.length === 0) break;
+    for (const hit of hits) {
+      const parsed = extractCikAndName(hit);
+      if (parsed) results.push(parsed);
+    }
+    from += pageSize;
     await sleep(150);
-    if (start > 3000) break; // safety cap
+    if (from > 9800) break; // EFTS hard caps at from+size <= 10000
   }
   return results;
 }
