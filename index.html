@@ -232,7 +232,7 @@ async function runScreen(){
     metaEl.innerHTML = `<span>${data.totalMatching} matching companies</span><span>Data as of: ${data.generatedAt ? new Date(data.generatedAt).toLocaleString() : 'not yet refreshed'}</span>`;
 
     if(data.results.length === 0){
-      resultsEl.innerHTML = '<p style="color:var(--muted)">No matches yet. If this is a brand-new deployment, the daily refresh job hasn\\'t run yet — trigger it manually from the GitHub Actions tab.</p>';
+      resultsEl.innerHTML = '<p style="color:var(--muted)">No matches yet. If this is a brand-new deployment, the daily refresh job hasn\'t run yet — trigger it manually from the GitHub Actions tab.</p>';
     } else {
       resultsEl.innerHTML = data.results.map(renderCard).join('');
     }
