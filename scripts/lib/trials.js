@@ -1,29 +1,57 @@
-const data = require('../data/biotech-data.json');
+// ClinicalTrials.gov API v2 — free, no key required.
+// Docs: https://clinicaltrials.gov/data-api/api
 
-// GET /api/screen?maxPrice=10&minRunway=0&catalystOnly=true&limit=100&sort=cash
-module.exports = (req, res) => {
-  const q = req.query || {};
-  const maxPrice = q.maxPrice ? parseFloat(q.maxPrice) : null;
-  const minCash = q.minCash ? parseFloat(q.minCash) : null;
-  const catalystOnly = q.catalystOnly === 'true';
-  const limit = q.limit ? Math.min(parseInt(q.limit, 10), 500) : 100;
-  const sort = q.sort || 'cash'; // 'cash' | 'runway' | 'catalysts'
+const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
 
-  let rows = data.companies.filter((c) => c.price != null);
-
-  if (maxPrice != null) rows = rows.filter((c) => c.price <= maxPrice);
-  if (minCash != null) rows = rows.filter((c) => (c.totalCashPosition || 0) >= minCash);
-  if (catalystOnly) rows = rows.filter((c) => c.catalystCount > 0);
-
-  rows.sort((a, b) => {
-    if (sort === 'runway') return (b.estimatedRunwayMonths || 0) - (a.estimatedRunwayMonths || 0);
-    if (sort === 'catalysts') return (b.catalystCount || 0) - (a.catalystCount || 0);
-    return (b.totalCashPosition || 0) - (a.totalCashPosition || 0);
+async function fetchTrialsForSponsor(companyName) {
+  const params = new URLSearchParams({
+    'query.spons': companyName,
+    'filter.overallStatus': 'RECRUITING,ACTIVE_NOT_RECRUITING,ENROLLING_BY_INVITATION',
+    'fields': 'NCTId,BriefTitle,PrimaryCompletionDate,OverallStatus,Phase,LeadSponsorName',
+    'pageSize': '20',
   });
+  const url = `https://clinicaltrials.gov/api/v2/studies?${params.toString()}`;
+  const res = await fetch(url, { headers: { Accept: 'application/json' } });
+  if (!res.ok) return [];
+  const data = await res.json();
+  return data.studies || [];
+}
 
-  res.status(200).json({
-    generatedAt: data.generatedAt,
-    totalMatching: rows.length,
-    results: rows.slice(0, limit),
-  });
-};
+// Returns trials whose primary completion date falls within [today, today+windowMonths]
+function filterNearTerm(studies, windowMonths = 4) {
+  const now = new Date();
+  const cutoff = new Date();
+  cutoff.setMonth(cutoff.getMonth() + windowMonths);
+
+  const out = [];
+  for (const s of studies) {
+    const proto = s.protocolSection;
+    if (!proto) continue;
+    const dateStruct = proto.statusModule?.primaryCompletionDateStruct;
+    const dateStr = dateStruct?.date;
+    if (!dateStr) continue;
+    // dates can be "YYYY-MM" or "YYYY-MM-DD"
+    const d = new Date(dateStr.length === 7 ? dateStr + '-01' : dateStr);
+    if (d >= now && d <= cutoff) {
+      out.push({
+        nctId: proto.identificationModule?.nctId,
+        title: proto.identificationModule?.briefTitle,
+        phase: (proto.designModule?.phases || []).join(', '),
+        status: proto.statusModule?.overallStatus,
+        primaryCompletionDate: dateStr,
+      });
+    }
+  }
+  return out;
+}
+
+async function fetchNearTermTrialCatalysts(companyName, windowMonths = 4) {
+  try {
+    const studies = await fetchTrialsForSponsor(companyName);
+    return filterNearTerm(studies, windowMonths);
+  } catch (e) {
+    return [];
+  }
+}
+
+module.exports = { fetchNearTermTrialCatalysts, sleep };
