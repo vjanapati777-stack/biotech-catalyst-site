@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-07-05T15:47:12.233Z",
-  "totalCompanies": 122,
+  "generatedAt": "2026-07-06T18:26:54.913Z",
+  "totalCompanies": 97,
   "companies": [
     {
       "ticker": "VSBC",
@@ -263,9 +263,9 @@
       "catalystCount": 0
     },
     {
-      "ticker": "AVXL",
-      "name": "ANAVEX LIFE SCIENCES CORP.",
-      "cik": "1314052",
+      "ticker": "SCKT",
+      "name": "SOCKET MOBILE, INC.",
+      "cik": "944075",
       "price": null,
       "cash": null,
       "cashAsOf": null,
@@ -276,9 +276,9 @@
       "catalystCount": 0
     },
     {
-      "ticker": "ELOX",
-      "name": "Eloxx Pharmaceuticals, Inc.",
-      "cik": "1035354",
+      "ticker": "OMCL",
+      "name": "OMNICELL, INC.",
+      "cik": "926326",
       "price": null,
       "cash": null,
       "cashAsOf": null,
@@ -289,9 +289,9 @@
       "catalystCount": 0
     },
     {
-      "ticker": "NNVC",
-      "name": "NANOVIRICIDES, INC.",
-      "cik": "1379006",
+      "ticker": "TDC",
+      "name": "TERADATA CORP /DE/",
+      "cik": "816761",
       "price": null,
       "cash": null,
       "cashAsOf": null,
@@ -302,9 +302,22 @@
       "catalystCount": 0
     },
     {
-      "ticker": "GOVX",
-      "name": "GeoVax Labs, Inc.",
-      "cik": "832489",
+      "ticker": "AAPL",
+      "name": "Apple Inc.",
+      "cik": "320193",
+      "price": null,
+      "cash": null,
+      "cashAsOf": null,
+      "shortTermInvestments": null,
+      "totalCashPosition": null,
+      "estimatedRunwayMonths": null,
+      "nearTermCatalysts": [],
+      "catalystCount": 0
+    },
+    {
+      "ticker": "SMCIP",
+      "name": "Super Micro Computer, Inc.",
+      "cik": "1375365",
       "price": null,
       "cash": null,
       "cashAsOf": null,
@@ -336,9 +349,48 @@
       "catalystCount": 1
     },
     {
+      "ticker": "GOVX",
+      "name": "GeoVax Labs, Inc.",
+      "cik": "832489",
+      "price": null,
+      "cash": null,
+      "cashAsOf": null,
+      "shortTermInvestments": null,
+      "totalCashPosition": null,
+      "estimatedRunwayMonths": null,
+      "nearTermCatalysts": [],
+      "catalystCount": 0
+    },
+    {
+      "ticker": "ELOX",
+      "name": "Eloxx Pharmaceuticals, Inc.",
+      "cik": "1035354",
+      "price": null,
+      "cash": null,
+      "cashAsOf": null,
+      "shortTermInvestments": null,
+      "totalCashPosition": null,
+      "estimatedRunwayMonths": null,
+      "nearTermCatalysts": [],
+      "catalystCount": 0
+    },
+    {
       "ticker": "PVLA",
       "name": "PALVELLA THERAPEUTICS, INC.",
       "cik": "1583648",
+      "price": null,
+      "cash": null,
+      "cashAsOf": null,
+      "shortTermInvestments": null,
+      "totalCashPosition": null,
+      "estimatedRunwayMonths": null,
+      "nearTermCatalysts": [],
+      "catalystCount": 0
+    },
+    {
+      "ticker": "ORGO",
+      "name": "Organogenesis Holdings Inc.",
+      "cik": "1661181",
       "price": null,
       "cash": null,
       "cashAsOf": null,
@@ -375,9 +427,22 @@
       "catalystCount": 0
     },
     {
-      "ticker": "ORGO",
-      "name": "Organogenesis Holdings Inc.",
-      "cik": "1661181",
+      "ticker": "AVXL",
+      "name": "ANAVEX LIFE SCIENCES CORP.",
+      "cik": "1314052",
+      "price": null,
+      "cash": null,
+      "cashAsOf": null,
+      "shortTermInvestments": null,
+      "totalCashPosition": null,
+      "estimatedRunwayMonths": null,
+      "nearTermCatalysts": [],
+      "catalystCount": 0
+    },
+    {
+      "ticker": "NNVC",
+      "name": "NANOVIRICIDES, INC.",
+      "cik": "1379006",
       "price": null,
       "cash": null,
       "cashAsOf": null,
@@ -427,9 +492,9 @@
       "catalystCount": 0
     },
     {
-      "ticker": "AMSC",
-      "name": "AMERICAN SUPERCONDUCTOR CORP /DE/",
-      "cik": "880807",
+      "ticker": "QRVO",
+      "name": "Qorvo, Inc.",
+      "cik": "1604778",
       "price": null,
       "cash": null,
       "cashAsOf": null,
@@ -440,9 +505,9 @@
       "catalystCount": 0
     },
     {
-      "ticker": "REFR",
-      "name": "RESEARCH FRONTIERS INC",
-      "cik": "793524",
+      "ticker": "SLAB",
+      "name": "SILICON LABORATORIES INC.",
+      "cik": "1038074",
       "price": null,
       "cash": null,
       "cashAsOf": null,
@@ -453,9 +518,9 @@
       "catalystCount": 0
     },
     {
-      "ticker": "AWHL",
-      "name": "Aspira Women's Health Inc.",
-      "cik": "926617",
+      "ticker": "NVEC",
+      "name": "NVE CORP /NEW/",
+      "cik": "724910",
       "price": null,
       "cash": null,
       "cashAsOf": null,
@@ -466,9 +531,9 @@
       "catalystCount": 0
     },
     {
-      "ticker": "EW",
-      "name": "Edwards Lifesciences Corp",
-      "cik": "1099800",
+      "ticker": "ENVB",
+      "name": "Enveric Biosciences, Inc.",
+      "cik": "890821",
       "price": null,
       "cash": null,
       "cashAsOf": null,
@@ -479,9 +544,9 @@
       "catalystCount": 0
     },
     {
-      "ticker": "SGMO",
-      "name": "SANGAMO THERAPEUTICS, INC",
-      "cik": "1001233",
+      "ticker": "ASTI",
+      "name": "Ascent Solar Technologies, Inc.",
+      "cik": "1350102",
       "price": null,
       "cash": null,
       "cashAsOf": null,
@@ -492,9 +557,9 @@
       "catalystCount": 0
     },
     {
-      "ticker": "LXRX",
-      "name": "LEXICON PHARMACEUTICALS, INC.",
-      "cik": "1062822",
+      "ticker": "AMBA",
+      "name": "AMBARELLA INC",
+      "cik": "1280263",
       "price": null,
       "cash": null,
       "cashAsOf": null,
@@ -505,9 +570,9 @@
       "catalystCount": 0
     },
     {
-      "ticker": "TARA",
-      "name": "Protara Therapeutics, Inc.",
-      "cik": "1359931",
+      "ticker": "DVLT",
+      "name": "Datavault AI Inc.",
+      "cik": "1682149",
       "price": null,
       "cash": null,
       "cashAsOf": null,
@@ -518,9 +583,9 @@
       "catalystCount": 0
     },
     {
-      "ticker": "ARTV",
-      "name": "Artiva Biotherapeutics, Inc.",
-      "cik": "1817241",
+      "ticker": "UCTT",
+      "name": "Ultra Clean Holdings, Inc.",
+      "cik": "1275014",
       "price": null,
       "cash": null,
       "cashAsOf": null,
@@ -531,9 +596,9 @@
       "catalystCount": 0
     },
     {
-      "ticker": "IMA",
-      "name": "ImageneBio, Inc.",
-      "cik": "1835579",
+      "ticker": "NLST",
+      "name": "NETLIST INC",
+      "cik": "1282631",
       "price": null,
       "cash": null,
       "cashAsOf": null,
@@ -544,424 +609,22 @@
       "catalystCount": 0
     },
     {
-      "ticker": "CGEM",
-      "name": "Cullinan Therapeutics, Inc.",
-      "cik": "1789972",
+      "ticker": "SMTC",
+      "name": "SEMTECH CORP",
+      "cik": "88941",
       "price": null,
       "cash": null,
       "cashAsOf": null,
       "shortTermInvestments": null,
       "totalCashPosition": null,
       "estimatedRunwayMonths": null,
-      "nearTermCatalysts": [
-        {
-          "nctId": "NCT05879744",
-          "title": "A Study of CLN-978 in Patients With Relapsed or Refractory (R/R) B Cell Non-Hodgkin Lymphoma (B-NHL)",
-          "phase": "PHASE1",
-          "status": "ACTIVE_NOT_RECRUITING",
-          "primaryCompletionDate": "2026-11"
-        },
-        {
-          "nctId": "NCT06381141",
-          "title": "A Study of CLN-619 (Anti-MICA/MICB Antibody) in Patients With Relapsed and Refractory Multiple Myeloma",
-          "phase": "PHASE1",
-          "status": "ACTIVE_NOT_RECRUITING",
-          "primaryCompletionDate": "2026-09"
-        }
-      ],
-      "catalystCount": 2
-    },
-    {
-      "ticker": "SABSW",
-      "name": "SAB Biotherapeutics, Inc.",
-      "cik": "1833214",
-      "price": null,
-      "cash": null,
-      "cashAsOf": null,
-      "shortTermInvestments": null,
-      "totalCashPosition": null,
-      "estimatedRunwayMonths": null,
-      "nearTermCatalysts": [],
-      "catalystCount": 0
-    },
-    {
-      "ticker": "EDIT",
-      "name": "Editas Medicine, Inc.",
-      "cik": "1650664",
-      "price": null,
-      "cash": null,
-      "cashAsOf": null,
-      "shortTermInvestments": null,
-      "totalCashPosition": null,
-      "estimatedRunwayMonths": null,
-      "nearTermCatalysts": [],
-      "catalystCount": 0
-    },
-    {
-      "ticker": "CHRS",
-      "name": "Coherus Oncology, Inc.",
-      "cik": "1512762",
-      "price": null,
-      "cash": null,
-      "cashAsOf": null,
-      "shortTermInvestments": null,
-      "totalCashPosition": null,
-      "estimatedRunwayMonths": null,
-      "nearTermCatalysts": [
-        {
-          "nctId": "NCT05635643",
-          "title": "Study of CHS-114 in Participants With Advanced Solid Tumors",
-          "phase": "PHASE1",
-          "status": "RECRUITING",
-          "primaryCompletionDate": "2026-09-30"
-        }
-      ],
-      "catalystCount": 1
-    },
-    {
-      "ticker": "VYGR",
-      "name": "Voyager Therapeutics, Inc.",
-      "cik": "1640266",
-      "price": null,
-      "cash": null,
-      "cashAsOf": null,
-      "shortTermInvestments": null,
-      "totalCashPosition": null,
-      "estimatedRunwayMonths": null,
-      "nearTermCatalysts": [],
-      "catalystCount": 0
-    },
-    {
-      "ticker": "BKHAU",
-      "name": "Black Hawk Acquisition Corp",
-      "cik": "2000775",
-      "price": null,
-      "cash": null,
-      "cashAsOf": null,
-      "shortTermInvestments": null,
-      "totalCashPosition": null,
-      "estimatedRunwayMonths": null,
-      "nearTermCatalysts": [],
-      "catalystCount": 0
-    },
-    {
-      "ticker": "CRBU",
-      "name": "Caribou Biosciences, Inc.",
-      "cik": "1619856",
-      "price": null,
-      "cash": null,
-      "cashAsOf": null,
-      "shortTermInvestments": null,
-      "totalCashPosition": null,
-      "estimatedRunwayMonths": null,
-      "nearTermCatalysts": [],
-      "catalystCount": 0
-    },
-    {
-      "ticker": "ATYR",
-      "name": "aTYR PHARMA INC",
-      "cik": "1339970",
-      "price": null,
-      "cash": null,
-      "cashAsOf": null,
-      "shortTermInvestments": null,
-      "totalCashPosition": null,
-      "estimatedRunwayMonths": null,
-      "nearTermCatalysts": [],
-      "catalystCount": 0
-    },
-    {
-      "ticker": "RGNX",
-      "name": "REGENXBIO Inc.",
-      "cik": "1590877",
-      "price": null,
-      "cash": null,
-      "cashAsOf": null,
-      "shortTermInvestments": null,
-      "totalCashPosition": null,
-      "estimatedRunwayMonths": null,
-      "nearTermCatalysts": [
-        {
-          "nctId": "NCT05693142",
-          "title": "AFFINITY DUCHENNE: RGX-202 Gene Therapy in Participants With Duchenne Muscular Dystrophy (DMD)",
-          "phase": "PHASE2, PHASE3",
-          "status": "RECRUITING",
-          "primaryCompletionDate": "2026-08"
-        },
-        {
-          "nctId": "NCT05407636",
-          "title": "Pivotal 2 Study of RGX-314 Gene Therapy in Participants With nAMD",
-          "phase": "PHASE3",
-          "status": "RECRUITING",
-          "primaryCompletionDate": "2026-10"
-        },
-        {
-          "nctId": "NCT04514653",
-          "title": "RGX-314 Gene Therapy Administered in the Suprachoroidal Space for Participants With Neovascular Age-Related Macular Degeneration (nAMD)",
-          "phase": "PHASE2",
-          "status": "ACTIVE_NOT_RECRUITING",
-          "primaryCompletionDate": "2026-08"
-        },
-        {
-          "nctId": "NCT05683379",
-          "title": "AFFINITY BEYOND: Anti-AAV8 Antibody Assessment Study of Males With DMD",
-          "phase": "",
-          "status": "RECRUITING",
-          "primaryCompletionDate": "2026-09"
-        }
-      ],
-      "catalystCount": 4
-    },
-    {
-      "ticker": "LCTX",
-      "name": "Lineage Cell Therapeutics, Inc.",
-      "cik": "876343",
-      "price": null,
-      "cash": null,
-      "cashAsOf": null,
-      "shortTermInvestments": null,
-      "totalCashPosition": null,
-      "estimatedRunwayMonths": null,
-      "nearTermCatalysts": [],
-      "catalystCount": 0
-    },
-    {
-      "ticker": "MGX",
-      "name": "Metagenomi Therapeutics, Inc.",
-      "cik": "1785279",
-      "price": null,
-      "cash": null,
-      "cashAsOf": null,
-      "shortTermInvestments": null,
-      "totalCashPosition": null,
-      "estimatedRunwayMonths": null,
-      "nearTermCatalysts": [],
-      "catalystCount": 0
-    },
-    {
-      "ticker": "ALGS",
-      "name": "Aligos Therapeutics, Inc.",
-      "cik": "1799448",
-      "price": null,
-      "cash": null,
-      "cashAsOf": null,
-      "shortTermInvestments": null,
-      "totalCashPosition": null,
-      "estimatedRunwayMonths": null,
-      "nearTermCatalysts": [],
-      "catalystCount": 0
-    },
-    {
-      "ticker": "IVVD",
-      "name": "Invivyd, Inc.",
-      "cik": "1832038",
-      "price": null,
-      "cash": null,
-      "cashAsOf": null,
-      "shortTermInvestments": null,
-      "totalCashPosition": null,
-      "estimatedRunwayMonths": null,
-      "nearTermCatalysts": [
-        {
-          "nctId": "NCT07298434",
-          "title": "Study of VYD2311 for the Prevention of COVID-19",
-          "phase": "PHASE3",
-          "status": "ACTIVE_NOT_RECRUITING",
-          "primaryCompletionDate": "2026-08"
-        },
-        {
-          "nctId": "NCT07655180",
-          "title": "Safety and Serum Virus Neutralizing Antibody Responses of VYD2311, a COVID-19 Vaccine, and Coadministered VYD2311 With a COVID-19 Vaccine",
-          "phase": "PHASE3",
-          "status": "RECRUITING",
-          "primaryCompletionDate": "2026-08"
-        }
-      ],
-      "catalystCount": 2
-    },
-    {
-      "ticker": "CMPX",
-      "name": "Compass Therapeutics, Inc.",
-      "cik": "1738021",
-      "price": null,
-      "cash": null,
-      "cashAsOf": null,
-      "shortTermInvestments": null,
-      "totalCashPosition": null,
-      "estimatedRunwayMonths": null,
-      "nearTermCatalysts": [],
-      "catalystCount": 0
-    },
-    {
-      "ticker": "OCGN",
-      "name": "Ocugen, Inc.",
-      "cik": "1372299",
-      "price": null,
-      "cash": null,
-      "cashAsOf": null,
-      "shortTermInvestments": null,
-      "totalCashPosition": null,
-      "estimatedRunwayMonths": null,
-      "nearTermCatalysts": [],
-      "catalystCount": 0
-    },
-    {
-      "ticker": "TCRX",
-      "name": "TScan Therapeutics, Inc.",
-      "cik": "1783328",
-      "price": null,
-      "cash": null,
-      "cashAsOf": null,
-      "shortTermInvestments": null,
-      "totalCashPosition": null,
-      "estimatedRunwayMonths": null,
-      "nearTermCatalysts": [],
-      "catalystCount": 0
-    },
-    {
-      "ticker": "PRME",
-      "name": "Prime Medicine, Inc.",
-      "cik": "1894562",
-      "price": null,
-      "cash": null,
-      "cashAsOf": null,
-      "shortTermInvestments": null,
-      "totalCashPosition": null,
-      "estimatedRunwayMonths": null,
-      "nearTermCatalysts": [],
-      "catalystCount": 0
-    },
-    {
-      "ticker": "SANA",
-      "name": "Sana Biotechnology, Inc.",
-      "cik": "1770121",
-      "price": null,
-      "cash": null,
-      "cashAsOf": null,
-      "shortTermInvestments": null,
-      "totalCashPosition": null,
-      "estimatedRunwayMonths": null,
-      "nearTermCatalysts": [],
-      "catalystCount": 0
-    },
-    {
-      "ticker": "SRRK",
-      "name": "Scholar Rock Holding Corp",
-      "cik": "1727196",
-      "price": null,
-      "cash": null,
-      "cashAsOf": null,
-      "shortTermInvestments": null,
-      "totalCashPosition": null,
-      "estimatedRunwayMonths": null,
-      "nearTermCatalysts": [],
-      "catalystCount": 0
-    },
-    {
-      "ticker": "PASG",
-      "name": "Passage BIO, Inc.",
-      "cik": "1787297",
-      "price": null,
-      "cash": null,
-      "cashAsOf": null,
-      "shortTermInvestments": null,
-      "totalCashPosition": null,
-      "estimatedRunwayMonths": null,
-      "nearTermCatalysts": [],
-      "catalystCount": 0
-    },
-    {
-      "ticker": "APGE",
-      "name": "Apogee Therapeutics, Inc.",
-      "cik": "1974640",
-      "price": null,
-      "cash": null,
-      "cashAsOf": null,
-      "shortTermInvestments": null,
-      "totalCashPosition": null,
-      "estimatedRunwayMonths": null,
-      "nearTermCatalysts": [
-        {
-          "nctId": "NCT06395948",
-          "title": "A Study Evaluating APG777 in Atopic Dermatitis",
-          "phase": "PHASE2",
-          "status": "ACTIVE_NOT_RECRUITING",
-          "primaryCompletionDate": "2026-11"
-        },
-        {
-          "nctId": "NCT06920901",
-          "title": "A Study to Evaluate the Safety, Tolerability, Pharmacokinetics (PK), and Immunogenicity of APG777 in Adults With Asthma",
-          "phase": "PHASE1",
-          "status": "ACTIVE_NOT_RECRUITING",
-          "primaryCompletionDate": "2026-09"
-        }
-      ],
-      "catalystCount": 2
-    },
-    {
-      "ticker": "ENZN",
-      "name": "Viskase Holdings, Inc.",
-      "cik": "727510",
-      "price": null,
-      "cash": null,
-      "cashAsOf": null,
-      "shortTermInvestments": null,
-      "totalCashPosition": null,
-      "estimatedRunwayMonths": null,
-      "nearTermCatalysts": [],
-      "catalystCount": 0
-    },
-    {
-      "ticker": "CGON",
-      "name": "CG Oncology, Inc.",
-      "cik": "1991792",
-      "price": null,
-      "cash": null,
-      "cashAsOf": null,
-      "shortTermInvestments": null,
-      "totalCashPosition": null,
-      "estimatedRunwayMonths": null,
-      "nearTermCatalysts": [
-        {
-          "nctId": "NCT06111235",
-          "title": "A Study of Adjuvant Cretostimogene Grenadenorepvec for Treatment of Intermediate Risk NMIBC Following TURBT",
-          "phase": "PHASE3",
-          "status": "ACTIVE_NOT_RECRUITING",
-          "primaryCompletionDate": "2026-11"
-        }
-      ],
-      "catalystCount": 1
-    },
-    {
-      "ticker": "DNLI",
-      "name": "Denali Therapeutics Inc.",
-      "cik": "1714899",
-      "price": null,
-      "cash": null,
-      "cashAsOf": null,
-      "shortTermInvestments": null,
-      "totalCashPosition": null,
-      "estimatedRunwayMonths": null,
-      "nearTermCatalysts": [],
-      "catalystCount": 0
-    },
-    {
-      "ticker": "DNABW",
-      "name": "Ginkgo Bioworks Holdings, Inc.",
-      "cik": "1830214",
-      "price": null,
-      "cash": null,
-      "cashAsOf": null,
-      "shortTermInvestments": null,
-      "totalCashPosition": null,
-      "estimatedRunwayMonths": null,
       "nearTermCatalysts": [],
       "catalystCount": 0
     },
     {
-      "ticker": "BCRX",
-      "name": "BIOCRYST PHARMACEUTICALS INC",
-      "cik": "882796",
+      "ticker": "BEEM",
+      "name": "Beam Global",
+      "cik": "1398805",
       "price": null,
       "cash": null,
       "cashAsOf": null,
@@ -970,32 +633,11 @@
       "estimatedRunwayMonths": null,
       "nearTermCatalysts": [],
       "catalystCount": 0
-    },
-    {
-      "ticker": "CCCC",
-      "name": "C4 Therapeutics, Inc.",
-      "cik": "1662579",
-      "price": null,
-      "cash": null,
-      "cashAsOf": null,
-      "shortTermInvestments": null,
-      "totalCashPosition": null,
-      "estimatedRunwayMonths": null,
-      "nearTermCatalysts": [
-        {
-          "nctId": "NCT04756726",
-          "title": "Study to Assess the Safety and Tolerability of CFT7455 in Relapsed/Refractory Non-Hodgkin's Lymphoma or Multiple Myeloma",
-          "phase": "PHASE1",
-          "status": "ACTIVE_NOT_RECRUITING",
-          "primaryCompletionDate": "2026-09-30"
-        }
-      ],
-      "catalystCount": 1
     },
     {
-      "ticker": "ADPT",
-      "name": "Adaptive Biotechnologies Corp",
-      "cik": "1478320",
+      "ticker": "QUIK",
+      "name": "QUICKLOGIC Corp",
+      "cik": "882508",
       "price": null,
       "cash": null,
       "cashAsOf": null,
@@ -1006,9 +648,9 @@
       "catalystCount": 0
     },
     {
-      "ticker": "TECX",
-      "name": "Tectonic Therapeutic, Inc.",
-      "cik": "1681087",
+      "ticker": "MRAM",
+      "name": "EVERSPIN TECHNOLOGIES INC.",
+      "cik": "1438423",
       "price": null,
       "cash": null,
       "cashAsOf": null,
@@ -1019,9 +661,9 @@
       "catalystCount": 0
     },
     {
-      "ticker": "RLAY",
-      "name": "Relay Therapeutics, Inc.",
-      "cik": "1812364",
+      "ticker": "ENPH",
+      "name": "Enphase Energy, Inc.",
+      "cik": "1463101",
       "price": null,
       "cash": null,
       "cashAsOf": null,
@@ -1032,9 +674,9 @@
       "catalystCount": 0
     },
     {
-      "ticker": "RGEN",
-      "name": "REPLIGEN CORP",
-      "cik": "730272",
+      "ticker": "LASR",
+      "name": "NLIGHT, INC.",
+      "cik": "1124796",
       "price": null,
       "cash": null,
       "cashAsOf": null,
@@ -1045,9 +687,9 @@
       "catalystCount": 0
     },
     {
-      "ticker": "FATE",
-      "name": "FATE THERAPEUTICS INC",
-      "cik": "1434316",
+      "ticker": "KOPN",
+      "name": "KOPIN CORP",
+      "cik": "771266",
       "price": null,
       "cash": null,
       "cashAsOf": null,
@@ -1058,9 +700,9 @@
       "catalystCount": 0
     },
     {
-      "ticker": "KYMR",
-      "name": "Kymera Therapeutics, Inc.",
-      "cik": "1815442",
+      "ticker": "PXLW",
+      "name": "PIXELWORKS, INC",
+      "cik": "1040161",
       "price": null,
       "cash": null,
       "cashAsOf": null,
@@ -1071,9 +713,9 @@
       "catalystCount": 0
     },
     {
-      "ticker": "NVAX",
-      "name": "NOVAVAX INC",
-      "cik": "1000694",
+      "ticker": "PRSO",
+      "name": "Peraso Inc.",
+      "cik": "890394",
       "price": null,
       "cash": null,
       "cashAsOf": null,
@@ -1084,9 +726,9 @@
       "catalystCount": 0
     },
     {
-      "ticker": "IMCR",
-      "name": "Immunocore Holdings plc",
-      "cik": "1671927",
+      "ticker": "ATOM",
+      "name": "Atomera Inc",
+      "cik": "1420520",
       "price": null,
       "cash": null,
       "cashAsOf": null,
@@ -1097,9 +739,9 @@
       "catalystCount": 0
     },
     {
-      "ticker": "RXRX",
-      "name": "RECURSION PHARMACEUTICALS, INC.",
-      "cik": "1601830",
+      "ticker": "AXTI",
+      "name": "AXT INC",
+      "cik": "1051627",
       "price": null,
       "cash": null,
       "cashAsOf": null,
@@ -1108,32 +750,11 @@
       "estimatedRunwayMonths": null,
       "nearTermCatalysts": [],
       "catalystCount": 0
-    },
-    {
-      "ticker": "ALEC",
-      "name": "Alector, Inc.",
-      "cik": "1653087",
-      "price": null,
-      "cash": null,
-      "cashAsOf": null,
-      "shortTermInvestments": null,
-      "totalCashPosition": null,
-      "estimatedRunwayMonths": null,
-      "nearTermCatalysts": [
-        {
-          "nctId": "NCT06079190",
-          "title": "Efficacy and Safety of GSK4527226 [AL101] in Participants With Early Alzheimer's Disease",
-          "phase": "PHASE2",
-          "status": "ACTIVE_NOT_RECRUITING",
-          "primaryCompletionDate": "2026-09-30"
-        }
-      ],
-      "catalystCount": 1
     },
     {
-      "ticker": "RVMDW",
-      "name": "Revolution Medicines, Inc.",
-      "cik": "1628171",
+      "ticker": "ICHR",
+      "name": "ICHOR HOLDINGS, LTD.",
+      "cik": "1652535",
       "price": null,
       "cash": null,
       "cashAsOf": null,
@@ -1144,9 +765,9 @@
       "catalystCount": 0
     },
     {
-      "ticker": "ADMA",
-      "name": "ADMA BIOLOGICS, INC.",
-      "cik": "1368514",
+      "ticker": "CEVA",
+      "name": "CEVA INC",
+      "cik": "1173489",
       "price": null,
       "cash": null,
       "cashAsOf": null,
@@ -1157,9 +778,9 @@
       "catalystCount": 0
     },
     {
-      "ticker": "PCVX",
-      "name": "Vaxcyte, Inc.",
-      "cik": "1649094",
+      "ticker": "MPWR",
+      "name": "MONOLITHIC POWER SYSTEMS INC",
+      "cik": "1280452",
       "price": null,
       "cash": null,
       "cashAsOf": null,
@@ -1170,9 +791,9 @@
       "catalystCount": 0
     },
     {
-      "ticker": "CRDF",
-      "name": "Cardiff Oncology, Inc.",
-      "cik": "1213037",
+      "ticker": "SEDG",
+      "name": "SOLAREDGE TECHNOLOGIES, INC.",
+      "cik": "1419612",
       "price": null,
       "cash": null,
       "cashAsOf": null,
@@ -1183,9 +804,9 @@
       "catalystCount": 0
     },
     {
-      "ticker": "BEAM",
-      "name": "Beam Therapeutics Inc.",
-      "cik": "1745999",
+      "ticker": "IPGP",
+      "name": "IPG PHOTONICS CORP",
+      "cik": "1111928",
       "price": null,
       "cash": null,
       "cashAsOf": null,
@@ -1194,74 +815,11 @@
       "estimatedRunwayMonths": null,
       "nearTermCatalysts": [],
       "catalystCount": 0
-    },
-    {
-      "ticker": "IOVA",
-      "name": "IOVANCE BIOTHERAPEUTICS, INC.",
-      "cik": "1425205",
-      "price": null,
-      "cash": null,
-      "cashAsOf": null,
-      "shortTermInvestments": null,
-      "totalCashPosition": null,
-      "estimatedRunwayMonths": null,
-      "nearTermCatalysts": [
-        {
-          "nctId": "NCT05483491",
-          "title": "KK-LC-1 TCR-T Cell Therapy for Gastric, Breast, Cervical, and Lung Cancer",
-          "phase": "PHASE1",
-          "status": "RECRUITING",
-          "primaryCompletionDate": "2026-09-01"
-        },
-        {
-          "nctId": "NCT05639972",
-          "title": "E7 T-cell Receptor (TCR) -T Cell Induction Therapy for Locoregionally Advanced HPV-associated Cancers",
-          "phase": "PHASE1, PHASE2",
-          "status": "RECRUITING",
-          "primaryCompletionDate": "2026-10-01"
-        },
-        {
-          "nctId": "NCT05640193",
-          "title": "A Study of LN-144 in People With Metastatic Melanoma to the Brain",
-          "phase": "PHASE1",
-          "status": "ACTIVE_NOT_RECRUITING",
-          "primaryCompletionDate": "2026-11"
-        }
-      ],
-      "catalystCount": 3
-    },
-    {
-      "ticker": "GILD",
-      "name": "GILEAD SCIENCES, INC.",
-      "cik": "882095",
-      "price": null,
-      "cash": null,
-      "cashAsOf": null,
-      "shortTermInvestments": null,
-      "totalCashPosition": null,
-      "estimatedRunwayMonths": null,
-      "nearTermCatalysts": [
-        {
-          "nctId": "NCT06727565",
-          "title": "Study of Novel Treatment Combination Therapies in Participants With Head and Neck Squamous Cell Carcinoma Regardless of PD-L1 Expression Status; Substudy-01",
-          "phase": "PHASE2",
-          "status": "ACTIVE_NOT_RECRUITING",
-          "primaryCompletionDate": "2026-08"
-        },
-        {
-          "nctId": "NCT05814432",
-          "title": "Efficacy and Safety of High-dose Liposomal Amphotericin B for Disseminated Histoplasmosis in AIDS",
-          "phase": "PHASE3",
-          "status": "RECRUITING",
-          "primaryCompletionDate": "2026-08-28"
-        }
-      ],
-      "catalystCount": 2
     },
     {
-      "ticker": "TARS",
-      "name": "Tarsus Pharmaceuticals, Inc.",
-      "cik": "1819790",
+      "ticker": "AAOI",
+      "name": "APPLIED OPTOELECTRONICS, INC.",
+      "cik": "1158114",
       "price": null,
       "cash": null,
       "cashAsOf": null,
@@ -1270,74 +828,11 @@
       "estimatedRunwayMonths": null,
       "nearTermCatalysts": [],
       "catalystCount": 0
-    },
-    {
-      "ticker": "VIR",
-      "name": "Vir Biotechnology, Inc.",
-      "cik": "1706431",
-      "price": null,
-      "cash": null,
-      "cashAsOf": null,
-      "shortTermInvestments": null,
-      "totalCashPosition": null,
-      "estimatedRunwayMonths": null,
-      "nearTermCatalysts": [
-        {
-          "nctId": "NCT07142811",
-          "title": "A Study to Evaluate Tobevibart+Elebsiran Versus Bulevirtide in Chronic HDV Infection",
-          "phase": "PHASE2",
-          "status": "ACTIVE_NOT_RECRUITING",
-          "primaryCompletionDate": "2026-11"
-        },
-        {
-          "nctId": "NCT05484206",
-          "title": "Effect of Hepatic Impairment on the Pharmacokinetics and Safety of VIR-2218 and VIR-3434",
-          "phase": "PHASE1",
-          "status": "RECRUITING",
-          "primaryCompletionDate": "2026-09-25"
-        }
-      ],
-      "catalystCount": 2
-    },
-    {
-      "ticker": "IBRX",
-      "name": "ImmunityBio, Inc.",
-      "cik": "1326110",
-      "price": null,
-      "cash": null,
-      "cashAsOf": null,
-      "shortTermInvestments": null,
-      "totalCashPosition": null,
-      "estimatedRunwayMonths": null,
-      "nearTermCatalysts": [
-        {
-          "nctId": "NCT07108036",
-          "title": "A Study to Assess Anktiva in Patients With Long Covid-19.",
-          "phase": "PHASE2",
-          "status": "RECRUITING",
-          "primaryCompletionDate": "2026-10"
-        },
-        {
-          "nctId": "NCT02138734",
-          "title": "A Study of Intravesical BCG in Combination With ALT-803 in Patients With Non-Muscle Invasive Bladder Cancer",
-          "phase": "PHASE1, PHASE2",
-          "status": "ACTIVE_NOT_RECRUITING",
-          "primaryCompletionDate": "2026-09-30"
-        },
-        {
-          "nctId": "NCT06239220",
-          "title": "PD-L1 t-haNK, NAI IL-15sa and Cetuximab for Recurrent, Metastatic HNSCC",
-          "phase": "PHASE2",
-          "status": "RECRUITING",
-          "primaryCompletionDate": "2026-07-31"
-        }
-      ],
-      "catalystCount": 3
     },
     {
-      "ticker": "MRNA",
-      "name": "Moderna, Inc.",
-      "cik": "1682852",
+      "ticker": "FORM",
+      "name": "FORMFACTOR INC",
+      "cik": "1039399",
       "price": null,
       "cash": null,
       "cashAsOf": null,
@@ -1348,9 +843,9 @@
       "catalystCount": 0
     },
     {
-      "ticker": "PHGE",
-      "name": "BiomX Inc.",
-      "cik": "1739174",
+      "ticker": "LSCC",
+      "name": "LATTICE SEMICONDUCTOR CORP",
+      "cik": "855658",
       "price": null,
       "cash": null,
       "cashAsOf": null,
@@ -1361,9 +856,9 @@
       "catalystCount": 0
     },
     {
-      "ticker": "ENGNW",
-      "name": "enGene Therapeutics Inc.",
-      "cik": "1980845",
+      "ticker": "TXN",
+      "name": "TEXAS INSTRUMENTS INC",
+      "cik": "97476",
       "price": null,
       "cash": null,
       "cashAsOf": null,
@@ -1374,9 +869,9 @@
       "catalystCount": 0
     },
     {
-      "ticker": "KRYS",
-      "name": "Krystal Biotech, Inc.",
-      "cik": "1711279",
+      "ticker": "FSLR",
+      "name": "FIRST SOLAR, INC.",
+      "cik": "1274494",
       "price": null,
       "cash": null,
       "cashAsOf": null,
@@ -1387,9 +882,9 @@
       "catalystCount": 0
     },
     {
-      "ticker": "HALO",
-      "name": "HALOZYME THERAPEUTICS, INC.",
-      "cik": "1159036",
+      "ticker": "MX",
+      "name": "MAGNACHIP SEMICONDUCTOR Corp",
+      "cik": "1325702",
       "price": null,
       "cash": null,
       "cashAsOf": null,
@@ -1400,9 +895,9 @@
       "catalystCount": 0
     },
     {
-      "ticker": "AMGN",
-      "name": "AMGEN INC",
-      "cik": "318154",
+      "ticker": "AMKR",
+      "name": "AMKOR TECHNOLOGY, INC.",
+      "cik": "1047127",
       "price": null,
       "cash": null,
       "cashAsOf": null,
@@ -1413,9 +908,9 @@
       "catalystCount": 0
     },
     {
-      "ticker": "CRSP",
-      "name": "CRISPR Therapeutics AG",
-      "cik": "1674416",
+      "ticker": "RMBS",
+      "name": "RAMBUS INC",
+      "cik": "917273",
       "price": null,
       "cash": null,
       "cashAsOf": null,
@@ -1426,9 +921,9 @@
       "catalystCount": 0
     },
     {
-      "ticker": "NBIX",
-      "name": "NEUROCRINE BIOSCIENCES INC",
-      "cik": "914475",
+      "ticker": "DIOD",
+      "name": "DIODES INC /DEL/",
+      "cik": "29002",
       "price": null,
       "cash": null,
       "cashAsOf": null,
@@ -1439,9 +934,9 @@
       "catalystCount": 0
     },
     {
-      "ticker": "BIIB",
-      "name": "BIOGEN INC.",
-      "cik": "875045",
+      "ticker": "NVDA",
+      "name": "NVIDIA CORP",
+      "cik": "1045810",
       "price": null,
       "cash": null,
       "cashAsOf": null,
@@ -1452,9 +947,9 @@
       "catalystCount": 0
     },
     {
-      "ticker": "ZEOX",
-      "name": "Zeo ScientifiX, Inc.",
-      "cik": "1557376",
+      "ticker": "ON",
+      "name": "ON SEMICONDUCTOR CORP",
+      "cik": "1097864",
       "price": null,
       "cash": null,
       "cashAsOf": null,
@@ -1465,9 +960,9 @@
       "catalystCount": 0
     },
     {
-      "ticker": "CVM",
-      "name": "CEL SCI CORP",
-      "cik": "725363",
+      "ticker": "POWI",
+      "name": "POWER INTEGRATIONS INC",
+      "cik": "833640",
       "price": null,
       "cash": null,
       "cashAsOf": null,
@@ -1478,9 +973,9 @@
       "catalystCount": 0
     },
     {
-      "ticker": "OTLK",
-      "name": "Outlook Therapeutics, Inc.",
-      "cik": "1649989",
+      "ticker": "AMD",
+      "name": "ADVANCED MICRO DEVICES INC",
+      "cik": "2488",
       "price": null,
       "cash": null,
       "cashAsOf": null,
@@ -1491,9 +986,9 @@
       "catalystCount": 0
     },
     {
-      "ticker": "TWST",
-      "name": "Twist Bioscience Corp",
-      "cik": "1581280",
+      "ticker": "MXL",
+      "name": "MAXLINEAR, INC",
+      "cik": "1288469",
       "price": null,
       "cash": null,
       "cashAsOf": null,
@@ -1504,9 +999,9 @@
       "catalystCount": 0
     },
     {
-      "ticker": "PLUR",
-      "name": "Pluri Inc.",
-      "cik": "1158780",
+      "ticker": "INTC",
+      "name": "INTEL CORP",
+      "cik": "50863",
       "price": null,
       "cash": null,
       "cashAsOf": null,
@@ -1517,9 +1012,9 @@
       "catalystCount": 0
     },
     {
-      "ticker": "TECH",
-      "name": "BIO-TECHNE Corp",
-      "cik": "842023",
+      "ticker": "SWKS",
+      "name": "SKYWORKS SOLUTIONS, INC.",
+      "cik": "4127",
       "price": null,
       "cash": null,
       "cashAsOf": null,
@@ -1530,9 +1025,9 @@
       "catalystCount": 0
     },
     {
-      "ticker": "PMCB",
-      "name": "PharmaCyte Biotech, Inc.",
-      "cik": "1157075",
+      "ticker": "AVGO",
+      "name": "Broadcom Inc.",
+      "cik": "1730168",
       "price": null,
       "cash": null,
       "cashAsOf": null,
@@ -1543,9 +1038,9 @@
       "catalystCount": 0
     },
     {
-      "ticker": "VIVS",
-      "name": "VivoSim Labs, INC.",
-      "cik": "1497253",
+      "ticker": "PLAB",
+      "name": "PHOTRONICS INC",
+      "cik": "810136",
       "price": null,
       "cash": null,
       "cashAsOf": null,
@@ -1556,9 +1051,9 @@
       "catalystCount": 0
     },
     {
-      "ticker": "CSBR",
-      "name": "CHAMPIONS ONCOLOGY, INC.",
-      "cik": "771856",
+      "ticker": "AMAT",
+      "name": "APPLIED MATERIALS INC /DE",
+      "cik": "6951",
       "price": null,
       "cash": null,
       "cashAsOf": null,
@@ -1569,9 +1064,9 @@
       "catalystCount": 0
     },
     {
-      "ticker": "AGTX",
-      "name": "Agentix Corp.",
-      "cik": "1603345",
+      "ticker": "ADI",
+      "name": "ANALOG DEVICES INC",
+      "cik": "6281",
       "price": null,
       "cash": null,
       "cashAsOf": null,
@@ -1582,9 +1077,9 @@
       "catalystCount": 0
     },
     {
-      "ticker": "ZSQR",
-      "name": "Z Squared Inc.",
-      "cik": "1759186",
+      "ticker": "LEDS",
+      "name": "SemiLEDs Corp",
+      "cik": "1333822",
       "price": null,
       "cash": null,
       "cashAsOf": null,
@@ -1595,9 +1090,9 @@
       "catalystCount": 0
     },
     {
-      "ticker": "IMVT",
-      "name": "Immunovant, Inc.",
-      "cik": "1764013",
+      "ticker": "KLIC",
+      "name": "KULICKE & SOFFA INDUSTRIES INC",
+      "cik": "56978",
       "price": null,
       "cash": null,
       "cashAsOf": null,
@@ -1608,9 +1103,9 @@
       "catalystCount": 0
     },
     {
-      "ticker": "REPL",
-      "name": "Replimune Group, Inc.",
-      "cik": "1737953",
+      "ticker": "MTSI",
+      "name": "MACOM Technology Solutions Holdings, Inc.",
+      "cik": "1493594",
       "price": null,
       "cash": null,
       "cashAsOf": null,
@@ -1621,9 +1116,9 @@
       "catalystCount": 0
     },
     {
-      "ticker": "DBVTF",
-      "name": "DBV Technologies S.A.",
-      "cik": "1613780",
+      "ticker": "PENG",
+      "name": "Penguin Solutions, Inc.",
+      "cik": "1616533",
       "price": null,
       "cash": null,
       "cashAsOf": null,
@@ -1634,9 +1129,9 @@
       "catalystCount": 0
     },
     {
-      "ticker": "INAB",
-      "name": "IN8BIO, INC.",
-      "cik": "1740279",
+      "ticker": "MU",
+      "name": "MICRON TECHNOLOGY INC",
+      "cik": "723125",
       "price": null,
       "cash": null,
       "cashAsOf": null,
@@ -1647,9 +1142,9 @@
       "catalystCount": 0
     },
     {
-      "ticker": "SCLXW",
-      "name": "Scilex Holding Co",
-      "cik": "1820190",
+      "ticker": "HYSR",
+      "name": "SUNHYDROGEN, INC.",
+      "cik": "1481028",
       "price": null,
       "cash": null,
       "cashAsOf": null,
@@ -1660,9 +1155,9 @@
       "catalystCount": 0
     },
     {
-      "ticker": "CEROW",
-      "name": "CERO THERAPEUTICS HOLDINGS, INC.",
-      "cik": "1870404",
+      "ticker": "LPTH",
+      "name": "LIGHTPATH TECHNOLOGIES INC",
+      "cik": "889971",
       "price": null,
       "cash": null,
       "cashAsOf": null,
@@ -1673,9 +1168,9 @@
       "catalystCount": 0
     },
     {
-      "ticker": "CELZ",
-      "name": "CREATIVE MEDICAL TECHNOLOGY HOLDINGS, INC.",
-      "cik": "1187953",
+      "ticker": "OSIS",
+      "name": "OSI SYSTEMS INC",
+      "cik": "1039065",
       "price": null,
       "cash": null,
       "cashAsOf": null,
@@ -1686,9 +1181,9 @@
       "catalystCount": 0
     },
     {
-      "ticker": "IKT",
-      "name": "Inhibikase Therapeutics, Inc.",
-      "cik": "1750149",
+      "ticker": "VIAV",
+      "name": "VIAVI SOLUTIONS INC.",
+      "cik": "912093",
       "price": null,
       "cash": null,
       "cashAsOf": null,
@@ -1699,9 +1194,9 @@
       "catalystCount": 0
     },
     {
-      "ticker": "CPMV",
-      "name": "Mosaic ImmunoEngineering Inc.",
-      "cik": "836564",
+      "ticker": "SYNA",
+      "name": "SYNAPTICS Inc",
+      "cik": "817720",
       "price": null,
       "cash": null,
       "cashAsOf": null,
@@ -1712,9 +1207,9 @@
       "catalystCount": 0
     },
     {
-      "ticker": "ESGH",
-      "name": "ESG Inc.",
-      "cik": "1883835",
+      "ticker": "AOSL",
+      "name": "ALPHA & OMEGA SEMICONDUCTOR Ltd",
+      "cik": "1387467",
       "price": null,
       "cash": null,
       "cashAsOf": null,
@@ -1725,9 +1220,9 @@
       "catalystCount": 0
     },
     {
-      "ticker": "WINT",
-      "name": "WINDTREE THERAPEUTICS INC /DE/",
-      "cik": "946486",
+      "ticker": "WOLF",
+      "name": "WOLFSPEED, INC.",
+      "cik": "895419",
       "price": null,
       "cash": null,
       "cashAsOf": null,
@@ -1738,9 +1233,9 @@
       "catalystCount": 0
     },
     {
-      "ticker": "ABPWW",
-      "name": "Abpro Holdings, Inc.",
-      "cik": "1893219",
+      "ticker": "GSIT",
+      "name": "GSI TECHNOLOGY INC",
+      "cik": "1126741",
       "price": null,
       "cash": null,
       "cashAsOf": null,
@@ -1751,9 +1246,9 @@
       "catalystCount": 0
     },
     {
-      "ticker": "TVGNW",
-      "name": "Tevogen Bio Holdings Inc.",
-      "cik": "1860871",
+      "ticker": "CRUS",
+      "name": "CIRRUS LOGIC, INC.",
+      "cik": "772406",
       "price": null,
       "cash": null,
       "cashAsOf": null,
@@ -1764,9 +1259,9 @@
       "catalystCount": 0
     },
     {
-      "ticker": "HUMAW",
-      "name": "Humacyte, Inc.",
-      "cik": "1818382",
+      "ticker": "MCHPP",
+      "name": "MICROCHIP TECHNOLOGY INC",
+      "cik": "827054",
       "price": null,
       "cash": null,
       "cashAsOf": null,
