@@ -1,20 +1,7 @@
 {
-  "generatedAt": "2026-07-10T17:28:17.040Z",
-  "totalCompanies": 38,
+  "generatedAt": "2026-07-11T14:37:45.256Z",
+  "totalCompanies": 37,
   "companies": [
-    {
-      "ticker": "VSBC",
-      "name": "VITASPRING BIOMEDICAL CO. LTD.",
-      "cik": "1697884",
-      "price": null,
-      "cash": null,
-      "cashAsOf": null,
-      "shortTermInvestments": null,
-      "totalCashPosition": null,
-      "estimatedRunwayMonths": null,
-      "nearTermCatalysts": [],
-      "catalystCount": 0
-    },
     {
       "ticker": "ONMDW",
       "name": "OneMedNet Corp",
@@ -42,7 +29,7 @@
       "catalystCount": 0
     },
     {
-      "ticker": "FOXOW",
+      "ticker": "FOXO",
       "name": "FOXO TECHNOLOGIES INC.",
       "cik": "1812360",
       "price": null,
@@ -358,8 +345,16 @@
       "shortTermInvestments": null,
       "totalCashPosition": null,
       "estimatedRunwayMonths": null,
-      "nearTermCatalysts": [],
-      "catalystCount": 0
+      "nearTermCatalysts": [
+        {
+          "nctId": "NCT06157151",
+          "title": "PRGN-2009 in Combination With Pembrolizumab in Patients With Recurrent or Metastatic Cervical Cancer",
+          "phase": "PHASE2",
+          "status": "RECRUITING",
+          "primaryCompletionDate": "2026-11-11"
+        }
+      ],
+      "catalystCount": 1
     },
     {
       "ticker": "EXEL",
