@@ -1,7 +1,20 @@
 {
-  "generatedAt": "2026-07-14T16:02:46.345Z",
-  "totalCompanies": 37,
+  "generatedAt": "2026-07-15T16:10:02.163Z",
+  "totalCompanies": 38,
   "companies": [
+    {
+      "ticker": "VSBC",
+      "name": "VITASPRING BIOMEDICAL CO. LTD.",
+      "cik": "1697884",
+      "price": null,
+      "cash": null,
+      "cashAsOf": null,
+      "shortTermInvestments": null,
+      "totalCashPosition": null,
+      "estimatedRunwayMonths": null,
+      "nearTermCatalysts": [],
+      "catalystCount": 0
+    },
     {
       "ticker": "ONMDW",
       "name": "OneMedNet Corp",
@@ -29,7 +42,7 @@
       "catalystCount": 0
     },
     {
-      "ticker": "FOXO",
+      "ticker": "FOXOD",
       "name": "FOXO TECHNOLOGIES INC.",
       "cik": "1812360",
       "price": null,
@@ -474,7 +487,7 @@
       "catalystCount": 0
     },
     {
-      "ticker": "SGMO",
+      "ticker": "SGMOQ",
       "name": "SANGAMO THERAPEUTICS, INC",
       "cik": "1001233",
       "price": null,
