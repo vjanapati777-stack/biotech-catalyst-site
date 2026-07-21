@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-20T16:17:00.837Z",
+  "generatedAt": "2026-07-21T16:06:23.603Z",
   "totalCompanies": 38,
   "companies": [
     {
@@ -324,16 +324,8 @@
       "shortTermInvestments": null,
       "totalCashPosition": null,
       "estimatedRunwayMonths": null,
-      "nearTermCatalysts": [
-        {
-          "nctId": "NCT05983250",
-          "title": "LEVosimendan to Improve Exercise Limitation in Patients With PH-HFpEF",
-          "phase": "PHASE3",
-          "status": "RECRUITING",
-          "primaryCompletionDate": "2026-10"
-        }
-      ],
-      "catalystCount": 1
+      "nearTermCatalysts": [],
+      "catalystCount": 0
     },
     {
       "ticker": "PVLA",
