@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-12T11:42:55.829Z",
+  "generatedAt": "2026-08-13T11:41:57.159Z",
   "totalCompanies": 38,
   "companies": [
     {
@@ -120,7 +120,7 @@
       "catalystCount": 0
     },
     {
-      "ticker": "OABIW",
+      "ticker": "OABI",
       "name": "OmniAb, Inc.",
       "cik": "1846253",
       "price": null,
