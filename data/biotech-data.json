@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-08-14T11:40:02.317Z",
-  "totalCompanies": 37,
+  "generatedAt": "2026-08-15T11:14:12.550Z",
+  "totalCompanies": 38,
   "companies": [
     {
       "ticker": "VSBC",
@@ -120,7 +120,7 @@
       "catalystCount": 0
     },
     {
-      "ticker": "OABIW",
+      "ticker": "OABI",
       "name": "OmniAb, Inc.",
       "cik": "1846253",
       "price": null,
@@ -175,6 +175,19 @@
       "ticker": "INCY",
       "name": "INCYTE CORP",
       "cik": "879169",
+      "price": null,
+      "cash": null,
+      "cashAsOf": null,
+      "shortTermInvestments": null,
+      "totalCashPosition": null,
+      "estimatedRunwayMonths": null,
+      "nearTermCatalysts": [],
+      "catalystCount": 0
+    },
+    {
+      "ticker": "NOTVQ",
+      "name": "Inotiv, Inc.",
+      "cik": "720154",
       "price": null,
       "cash": null,
       "cashAsOf": null,
