@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-26T14:52:23.972Z",
+  "generatedAt": "2026-09-27T15:34:29.602Z",
   "totalCompanies": 37,
   "companies": [
     {
@@ -16,7 +16,7 @@
       "catalystCount": 0
     },
     {
-      "ticker": "ONMD",
+      "ticker": "ONMDW",
       "name": "OneMedNet Corp",
       "cik": "1849380",
       "price": null,
