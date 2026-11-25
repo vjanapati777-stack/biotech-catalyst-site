@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-11-24T21:13:10.864Z",
-  "totalCompanies": 120,
+  "generatedAt": "2026-11-25T20:36:00.656Z",
+  "totalCompanies": 119,
   "companies": [
     {
       "ticker": "FLNC",
@@ -638,19 +638,6 @@
       "ticker": "DIS",
       "name": "Walt Disney Co",
       "cik": "1744489",
-      "price": null,
-      "cash": null,
-      "cashAsOf": null,
-      "shortTermInvestments": null,
-      "totalCashPosition": null,
-      "estimatedRunwayMonths": null,
-      "nearTermCatalysts": [],
-      "catalystCount": 0
-    },
-    {
-      "ticker": "IMAA",
-      "name": "IMA Tech",
-      "cik": "1980295",
       "price": null,
       "cash": null,
       "cashAsOf": null,
